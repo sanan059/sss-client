@@ -1,0 +1,4 @@
+.navbar-transparent {
+    background-color: transparent;
+    backdrop-filter: blur(5px); /* Add backdrop filter for a blurred effect */
+}
