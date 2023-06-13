@@ -1,10 +1,23 @@
-import Home from "./Pages/Home/Home";
+// ROUTER DOM
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+// ROUTES
+import PublicRoutes from "./Routes/PublicRoutes";
+import PrivateRoutes from "./Routes/PrivateRoutes";
+
+// SERVICES & UTILS
 
 const App = () => {
 
   return <>
-    <Home/>
+    <BrowserRouter>
+      <Routes>
+        <Route path="*" element={<PublicRoutes />} />
+      </Routes>
+      <Routes>
+        <Route path="*" element={<PrivateRoutes />} />
+      </Routes>
+    </BrowserRouter>
   </>
 }
 

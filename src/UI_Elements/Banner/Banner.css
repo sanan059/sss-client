@@ -1,0 +1,22 @@
+/* .banner-position{
+    position: ;
+} */
+
+.banner-text{
+    position: absolute;
+    bottom: 350px;
+}
+
+.outline-focus:focus{
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.banner-button{
+    color: white !important;
+    border: 1px solid white !important;
+}
+
+.banner-button:hover{
+    border: none !important;
+}
