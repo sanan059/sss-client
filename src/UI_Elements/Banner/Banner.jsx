@@ -15,7 +15,7 @@ const Banner = () => {
   return <>
     {/* BANNER */}
 
-    <Carousel style={{ minHeight: '100vh' }}  indicators={false} slide={true} >
+    <Carousel indicators={false} slide={true} >
       <Carousel.Item>
         <img
           className="d-block w-100 banner-position"
