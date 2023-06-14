@@ -1,7 +1,6 @@
 // HOOKS
 import { useEffect, useState } from "react";
-// APP COMPONENT
-import MainNavbar from "../../Components/Navbar/Navbar";
+import { Outlet } from "react-router-dom";
 // TOKEN
 import { decodedToken } from "../../Utilities/AuthUtils/AuthUtils";
 // SERVICES
@@ -10,6 +9,8 @@ import { UserServices } from "../../Services/UserServices/Userservices";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai"
 // REACT COMPONENTS
 import { Tab, Tabs } from 'react-bootstrap';
+
+
 
 
 const Dashboard = () => {
@@ -23,12 +24,6 @@ const Dashboard = () => {
   // SERVICES
   const UserService = new UserServices();
 
-  // async function getSingleUserDetail() {
-  //   const { data } = await UserService.GetSingleUserWithDetail(userLoggedIn._id);
-  //   setUserDetail(data.user)
-  // }
-  // console.log(userDetail);
-
   useEffect(() => {
     async function getSingleUserDetail() {
       const { data } = await UserService.GetSingleUserWithDetail(userLoggedIn._id);
@@ -39,8 +34,7 @@ const Dashboard = () => {
 
 
   return <>
-    <MainNavbar />
-    <section style={{ backgroundColor: "#eee" }}>
+    <section>
       <div className="container py-5">
         <div className="row">
           <div className="col-lg-4">
@@ -128,6 +122,7 @@ const Dashboard = () => {
         </div>
       </div>
     </section>
+    <Outlet/>
 
   </>
 }

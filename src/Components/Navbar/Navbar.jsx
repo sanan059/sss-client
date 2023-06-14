@@ -4,13 +4,11 @@ import { useNavigate } from 'react-router-dom';
 // BOOTSTRAP COMPONENTS
 import {Button , Container, Navbar} from 'react-bootstrap';
 
-import './Navbar.css'
-
 const MainNavbar = () => {
   const navigate = useNavigate();
   return <>
     {/* NAVBAR */}
-    <Navbar bg="dark" sticky='top' className='py-4 navbar-transparent' expand="lg">
+    <Navbar bg="dark" sticky='top' className='py-4' expand="lg">
       <Container>
         <Navbar.Brand href='#' className='text-light'>LOGO</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />

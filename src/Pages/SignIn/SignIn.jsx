@@ -20,7 +20,11 @@ const SignIn = () => {
   }
 
   return <>
-    <form onSubmit={handleSubmit(submitForm)}>
+    {/* <div className="container py-5">
+      <div className="row py-5 justify-content-center">
+        <div className="col-lg-6">
+          <h2 className="text-center pb-5">Sign In</h2> */}
+        <form onSubmit={handleSubmit(submitForm)}>
       {/* Email input */}
       <div className="form-outline mb-4">
         <label className="form-label" htmlFor="form2Example1">
@@ -59,6 +63,9 @@ const SignIn = () => {
         </button>
       </div> */}
     </form>
+        {/* </div>
+      </div>
+    </div> */}
 
   </>
 }

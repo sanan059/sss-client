@@ -1,0 +1,25 @@
+.user-nav-button {
+  border: none;
+}
+
+.navbar-transparent {
+  color: black;
+  border-bottom: 1px solid #d5d4d2;
+}
+
+.user-nav-buttons {
+  color: #95979d !important;
+  border: none;
+  outline: none;
+  border-radius: 0 !important;
+  background-color: none !important;
+}
+
+.user-nav-buttons:hover {
+  border-bottom: #1dbf73;
+}
+
+.user-nav-buttons:focus{
+  outline: none;
+  box-shadow: none;
+}
