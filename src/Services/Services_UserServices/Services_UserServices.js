@@ -6,6 +6,14 @@ export class ServicesOfUserServices {
       url: '/services',
       method: "GET"
     });
+    return response;
+  }
+
+  async GetSingleServiceDetails (id) {
+    const response = await AppInstance({
+      url: `/services/${id}`,
+      method: "GET"
+    });
     console.log(response);
     return response;
   }

@@ -1,11 +1,11 @@
 // HOOKS
-import { useEffect } from "react";
+// import { useEffect } from "react";
 // ROUTER DOM
 import { Routes, Route } from "react-router-dom";
 // APP COMPONENT
 import Dashboard from "../Pages/Dashboard/Dashboard";
-import UserServices from "../Components/UserServices/UserServices";
-import UserNavbar from "../Components/UserNavbar/UserNavbar";
+import UserServiceDetail from "../Components/UserServices/UserServiceDetail";
+// import UserNavbar from "../Components/UserNavbar/UserNavbar";
 // UTILITIES
 import { isLoggedIn } from "../Utilities/AuthUtils/AuthUtils";
 
@@ -17,19 +17,19 @@ const PrivateRoutes = () => {
       Component: Dashboard
     },
     {
-      path: '/dashboard/services',
-      Component: UserServices
+      path: '/dashboard/service-detail/:id',
+      Component: UserServiceDetail
     }
   ];
 
-  useEffect(() => {
+  // useEffect(() => {
 
-  }, [isLoggedIn()])
+  // }, [isLoggedIn()])
   
 
   return <>
   {console.log(isLoggedIn())}
-  {isLoggedIn() ? <UserNavbar /> : null}
+  {/* {isLoggedIn() ? <UserNavbar /> : null} */}
     <Routes>
       {privateRoutes.map(({ path, Component }, i) => {
         return <Route path={path} element={<Component />} key={i} />

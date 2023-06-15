@@ -6,7 +6,6 @@ export class UserServices {
       url: `/users/${id}`,
       method: "GET"
     });
-    console.log(response);
     return response;
   }
 }

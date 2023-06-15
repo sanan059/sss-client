@@ -1,33 +1,41 @@
 // HOOKS
 import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 // USERSERVICES CSS
 import './UserServices.css';
 // SERVICES
 import { ServicesOfUserServices } from '../../Services/Services_UserServices/Services_UserServices';
 // ICONS
 import { AiFillStar } from "react-icons/ai"
+// APP COMPONENT
+import UserNavbar from '../UserNavbar/UserNavbar';
 
 
-const UserServices = () => {
+
+const UserServiceDetail = () => {
   // HOOKS
-  const [services, setServices] = useState();
+  const [serviceDetail, setServiceDetail] = useState(null);
+  const { id } = useParams();
 
   // SERVICES
-  const Service = new ServicesOfUserServices();
+  const ServiceDetail = new ServicesOfUserServices();
 
 
   useEffect(() => {
-    async function getAllUserServices() {
-      const { data } = await Service.GetAllServicesOfAUsers();
-      setServices(data.AllServices);
-      console.log(services && services);
+    async function getSingleServiceWithDetails() {
+      const { data } = await ServiceDetail.GetSingleServiceDetails(id);
+      setServiceDetail(data.service);
     }
-    getAllUserServices();
-  }, [])
+    getSingleServiceWithDetails();
+  }, []);
+  
+  console.log(serviceDetail);
 
   return <>
+    <UserNavbar/>
     <div className="container my-5">
       <div className="row">
+        <h5>{serviceDetail?.title}</h5>
         {/* <div className="col-md-3 col-sm-6 p-2">
           <div className="card card-block border-0 p-2">
             <h4 className="card-title text-right">
@@ -44,7 +52,7 @@ const UserServices = () => {
             </p>
           </div>
         </div> */}
-        {services ? services.map((service, i) => {
+        {/* {serviceDetail ? serviceDetail.map((service, i) => {
           return <div key={i} className="col-md-3 col-sm-6 p-2">
             
             <div className="card card-block border-0 p-2">
@@ -67,7 +75,7 @@ const UserServices = () => {
               </div>
             </div>
           </div>
-        }) : <>No Service Here</>}
+        }) : <> No Service Here </>} */}
         {/* <div className="col-md-3 col-sm-6 p-2">
           <div className="card card-block border-0 p-2">
             <h4 className="card-title text-right">
@@ -121,4 +129,4 @@ const UserServices = () => {
   </>
 }
 
-export default UserServices;
+export default UserServiceDetail;

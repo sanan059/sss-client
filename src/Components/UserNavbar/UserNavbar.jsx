@@ -19,8 +19,8 @@ const UserNavbar = () => {
             <Button variant='light' className=" user-nav-buttons me-2" onClick={() => { navigate("/dashboard/services")}}>Services</Button>
             <Button variant='light' className=" user-nav-buttons me-2">Orders</Button>
             <Button variant='light' className=" user-nav-buttons me-2">Messages</Button>
+            <Button variant='light' className=" user-nav-buttons me-2">Earnings</Button>
             <Button variant='light' className=" user-nav-buttons me-2">Notifications</Button>
-            <Button variant='light' className=" user-nav-buttons me-2">Likes</Button>
             {/* <Button variant="" onClick={() => navigate("/sign-in")}>Sign-in</Button> */}
             <img
                   src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp"
