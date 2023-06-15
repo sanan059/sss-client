@@ -97,6 +97,7 @@ const Dashboard = () => {
               <h5 className="mt-2">My Services</h5>
               <button className="btn btn-primary">Add New Service</button>
             </div>
+            {/* SERVICE TABLE */}
             <table className="table mt-5">
               <thead>
                 <tr>
