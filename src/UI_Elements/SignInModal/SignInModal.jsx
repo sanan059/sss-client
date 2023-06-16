@@ -1,8 +1,9 @@
 // HOOKS
 import { useState } from 'react';
 
-// REACT COMPONENTS
+// REACT COMPONENTS AND CUSTOM CSS
 import { Modal, Button } from 'react-bootstrap';
+import "../Banner/Banner.css"
 
 // COMPONENTS
 import SignIn from '../../Pages/SignIn/SignIn';
@@ -15,7 +16,7 @@ const SignInModal = () => {
 
   return <>
 
-    <Button variant="outline-primary" className='banner-button' size="lg" onClick={handleShow}>
+    <Button variant="outline-success" className='app-buttons-out' size="lg" onClick={handleShow}>
       Become Seller 
     </Button>
 
@@ -35,7 +36,7 @@ const SignInModal = () => {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary">Understood</Button>
+          {/* <Button variant="primary">Understood</Button> */}
         </Modal.Footer>
       </Modal>
 

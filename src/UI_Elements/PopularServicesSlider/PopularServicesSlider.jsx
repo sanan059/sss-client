@@ -13,7 +13,7 @@ const PopularServicesSlider = () => {
     <div className="container py-5">
       <div className="row py-5">
         <div className="col">
-          <h3 className="fw-bold">Our Popular Services</h3>
+          <h3 className="fw-bold pb-2 mb-5 popular-services">Popular Services</h3>
         </div>
       <Swiper
         onSwiper={setSwiperRef}

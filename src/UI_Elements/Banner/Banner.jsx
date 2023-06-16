@@ -34,12 +34,12 @@ const Banner = () => {
                     aria-describedby="basic-addon2"
                     className='outline-focus'
                   />
-                  <Button variant="success" id="button-addon2">
+                  <Button className='app-buttons-in' id="button-addon2">
                     <AiOutlineSearch />
                   </Button>
                 </InputGroup>
                 <div className="mt-4">
-                  <Button variant="success" className='me-3' size="lg">
+                  <Button variant="success" className='me-3 app-buttons-in' size="lg">
                     Hire Influencers
                   </Button>{' '}
                   <SignInModal />
@@ -73,7 +73,7 @@ const Banner = () => {
                   </Button>
                 </InputGroup>
                 <div className="mt-4">
-                  <Button variant="success" className='me-3' size="lg">
+                  <Button variant="success" className='me-3 app-buttons-in' size="lg">
                   Hire Influencers
                   </Button>{' '}
                   <SignInModal />
@@ -107,7 +107,7 @@ const Banner = () => {
                   </Button>
                 </InputGroup>
                 <div className="mt-4">
-                  <Button variant="success" className='me-3' size="lg">
+                  <Button variant="success" className='me-3 app-buttons-in' size="lg">
                   Hire Influencers
                   </Button>{' '}
                   <SignInModal />

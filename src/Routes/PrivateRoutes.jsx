@@ -5,9 +5,11 @@ import { Routes, Route } from "react-router-dom";
 // APP COMPONENT
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import UserServiceDetail from "../Components/UserServices/UserServiceDetail";
+import CreateNewService from "../Components/UserServices/CreateNewService";
 // import UserNavbar from "../Components/UserNavbar/UserNavbar";
 // UTILITIES
 import { isLoggedIn } from "../Utilities/AuthUtils/AuthUtils";
+
 
 const PrivateRoutes = () => {
   // ROUTES
@@ -19,6 +21,10 @@ const PrivateRoutes = () => {
     {
       path: '/dashboard/service-detail/:id',
       Component: UserServiceDetail
+    },
+    {
+      path: '/dashboard/create-service',
+      Component: CreateNewService
     }
   ];
 

@@ -1,0 +1,25 @@
+#register:hover, .sign-in:hover {
+  border: #06b14c 1px solid !important;
+  background-color: #06b14c !important;
+  color: white;
+}
+
+#basic-nav-dropdown {
+  color: black !important;
+}
+
+.nav-hoverable:hover {
+  border-bottom: #06b14c 2px solid !important;
+  cursor: pointer;
+}
+
+.main-nav-sign-in {
+  color: black !important;
+  border: 1px solid black !important;
+  border-radius: 5px !important;
+}
+
+.main-nav-sign-in:hover {
+  color: white !important;
+  background-color: #06b14c !important;
+}

@@ -2,21 +2,33 @@
     position: ;
 } */
 
-.banner-text{
-    position: absolute;
-    bottom: 300px;
+.banner-text {
+  position: absolute;
+  bottom: 300px;
 }
 
-.outline-focus:focus{
-    box-shadow: none !important;
-    border: none !important;
+.outline-focus:focus {
+  box-shadow: none !important;
+  border: none !important;
 }
 
-.banner-button{
-    color: white !important;
-    border: 1px solid white !important;
+.banner-button {
+  color: white !important;
+  border: 1px solid white !important;
 }
 
-.banner-button:hover{
-    border: none !important;
+.banner-button:hover {
+  border: none !important;
+  background-color: #06b14c !important;
 }
+
+/* .hire-button {
+  background-color: #06b14c !important;
+  border: none !important;
+}
+
+.hire-button:hover {
+  color: white !important;
+  border: 1px solid white !important;
+  background-color: transparent !important;
+} */

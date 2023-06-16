@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.app-buttons-in {
+  background-color: #06b14c !important;
+  border: none !important;
+}
+
+.app-buttons-in:hover {
+  color: white !important;
+  border: 1px solid white !important;
+  background-color: transparent !important;
+}
+
+.app-buttons-out {
+  color: white !important;
+  border: 1px solid white !important;
+}
+
+.app-buttons-out:hover {
+  border: none !important;
+  background-color: #06b14c !important;
+}

@@ -10,6 +10,7 @@ import { ServicesOfUserServices } from '../../Services/Services_UserServices/Ser
 import { AiFillStar, AiOutlineStar } from "react-icons/ai"
 // APP COMPONENT
 import UserNavbar from "../../Components/UserNavbar/UserNavbar";
+import "../../Components/UserServices/UserServices.css"
 
 const Dashboard = () => {
 
@@ -95,7 +96,7 @@ const Dashboard = () => {
           <div className="col-lg-8">
             <div className="d-flex justify-content-between">
               <h5 className="mt-2">My Services</h5>
-              <button className="btn btn-primary">Add New Service</button>
+              <button className="btn service-button text-light" onClick={() => {navigate("/dashboard/create-service")}}>Add New Service</button>
             </div>
             {/* SERVICE TABLE */}
             <table className="table mt-5">
@@ -115,7 +116,7 @@ const Dashboard = () => {
                     <td>{service.description}</td>
                     <td style={{width: "auto", textAlign: "end"}}>
                       <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn-success dropdown-toggle service-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                           More
                         </button>
                         <ul class="dropdown-menu">

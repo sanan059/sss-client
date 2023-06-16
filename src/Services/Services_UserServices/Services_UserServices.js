@@ -17,4 +17,14 @@ export class ServicesOfUserServices {
     console.log(response);
     return response;
   }
+
+  async CreateNewService (service) {
+    const response = await AppInstance({
+      url: "/services/create",
+      method: "POST",
+      data: service
+    });
+    console.log(response.data);
+    return response;
+  }
 }
